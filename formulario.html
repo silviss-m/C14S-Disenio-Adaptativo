@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes</title>
+    <link rel="stylesheet" href="./css/style-formulario.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="descuentos">
+      <p>Descuentos 20%</p>
+    </section>
+    <h1>Heroes</h1>
+    <main>
+      <div class="contenedor-formulario">
+        <section class="formulario">
+          <form action="./index.html" method="get">
+            <h2>Añadí tu super!</h2>
+            <p class="instruccion">
+              Agregá tu personaje favorito completando las opciones.
+            </p>
+
+            <section class="columnas">
+              <div class="columna-1">
+                <label class="label-nombre" for="nombre"
+                  ><h3>*Nombre</h3></label
+                >
+                <input
+                  class="nombre"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  required
+                />
+
+                <label class="label-fecha" for="fecha"><h3>Fecha</h3></label>
+                <input class="fecha" type="date" name="fecha" id="fecha" />
+
+                <textarea
+                  class="descripcion"
+                  name="descripcion"
+                  id="descripcion"
+                >
+Descripción</textarea
+                >
+              </div>
+
+              <div class="columna-2">
+                <label class="label-especie" for="especie"
+                  ><h3>*Especie</h3></label
+                >
+                <select class="especie" name="especie" id="especie" required>
+                  <option value="" selected disabled hidden>Especie</option>
+                  <option value="Extraterrestre">Extraterreste</option>
+                  <option value="Humano">Humano</option>
+                  <option value="Elfo">Elfo</option>
+                  <option value="Robot">Robot</option>
+                  <option value="Mutante">Mutante</option>
+                  <option value="Criatura">Criatura</option>
+                </select>
+
+                <label class="label-foto" for="foto"
+                  ><h3>Agregar foto</h3></label
+                >
+                <input
+                  class="foto"
+                  type="file"
+                  name="foto"
+                  accept=".jpg"
+                  multiple
+                />
+
+                <section class="poderes">
+                  <h3>Poderes</h3>
+
+                  <label for="volar">
+                    <input type="checkbox" name="poderes" id="volar" /> Volar
+                  </label>
+                  <label for="superinteligencia">
+                    <input
+                      type="checkbox"
+                      name="poderes"
+                      id="superinteligencia"
+                    />
+                    Superinteligencia
+                  </label>
+                  <label for="rayo-laser">
+                    <input type="checkbox" name="poderes" id="rayo-laser" />
+                    Vista de rayo láser
+                  </label>
+                  <label for="billetera">
+                    <input type="checkbox" name="poderes" id="billetera" />
+                    Billetera gorda
+                  </label>
+                </section>
+                <hr />
+
+                <section class="tipo-heroe">
+                  <h3>Tipo de personaje</h3>
+                  <label for="heroe">
+                    <input type="radio" name="personaje" id="heroe" /> Héroe /
+                    Heroina
+                  </label>
+                  <label for="heroe">
+                    <input type="radio" name="personaje" id="villano" /> Villano
+                    / Villana
+                  </label>
+                </section>
+              </div>
+            </section>
+
+            <button type="submit" name="añadir" id="añadir">Añadir</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-formulario">
+        <p>Todos los derechos reservados a TDW</p>
+      </div>
+    </footer>
+  </body>
+</html>
