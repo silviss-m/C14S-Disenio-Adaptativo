@@ -158,12 +158,23 @@ main {
   border-radius: 7px;
 }
 
+.card-body a:hover {
+  background-color: #001d2d;
+}
+
 .btn-agregar {
-  display: flex;
   position: fixed;
+  right: 30px;
   top: 50%;
-  right: 20px;
-  width: 50px;
+}
+
+.btn-agregar i {
+  color: #00669f;
+  font-size: 50px;
+}
+
+.btn-agregar i:hover {
+  color: #001d2d;
 }
 
 footer {
