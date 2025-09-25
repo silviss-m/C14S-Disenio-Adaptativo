@@ -166,10 +166,8 @@ main {
   position: fixed;
   right: 30px;
   top: 50%;
-<<<<<<< HEAD
   right: 20px;
   width: 50px;
-=======
 }
 
 .btn-agregar i {
@@ -179,7 +177,6 @@ main {
 
 .btn-agregar i:hover {
   color: #001d2d;
->>>>>>> b6010f9e6b245a11ea6243c25e3b7fb7ff64b0a7
 }
 
 footer {
