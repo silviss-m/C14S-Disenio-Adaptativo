@@ -243,6 +243,11 @@ button {
   width: 25vw;
 }
 
+button:hover {
+  background-color: #001d2d;
+  color: white;
+}
+
 footer {
   background-color: #00669f;
   color: white;
@@ -353,6 +358,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 324.5px) {
   .logo-y-titulo {
     height: 131px;
@@ -360,6 +366,8 @@ footer {
   }
 }
 
+=======
+>>>>>>> b6010f9e6b245a11ea6243c25e3b7fb7ff64b0a7
 @media (max-width: 331.5px) {
   form {
     width: 50vw;
@@ -368,5 +376,12 @@ footer {
   .instruccion {
     padding-left: 0%;
     width: 45vw;
+  }
+}
+
+@media (max-width: 324.5px) {
+  .logo-y-titulo {
+    height: 131px;
+    justify-content: center;
   }
 }
