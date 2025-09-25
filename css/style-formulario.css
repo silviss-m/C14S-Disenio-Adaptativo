@@ -9,30 +9,59 @@ body {
 }
 
 .descuentos {
-  background-color: #d1891c;
-  color: #333333;
+  background-color: #1cd1b0;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
-  font-size: 45px;
-  padding-left: 67px;
-  padding-top: 4px;
-  padding-bottom: 1px;
-  height: 61px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  height: 23px;
 }
 
-h1 {
+.logo-y-titulo {
+  align-content: center;
   align-items: center;
   background-color: #00669f;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  height: 81px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
+.logo-y-titulo img {
+  width: 99px;
+  height: 74px;
+}
+
+h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
-  height: 101px;
-  padding-left: 67px;
+}
+
+nav {
+  background-color: #001d2d;
+}
+
+.barra-navegacion ul {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.barra-navegacion a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -255,13 +284,6 @@ footer {
   }
 }
 
-@media (max-width: 570px) {
-  h1 {
-    justify-content: center;
-    padding-left: 0%;
-  }
-}
-
 @media (max-width: 558px) {
   .instruccion {
     padding-left: 15px;
@@ -318,11 +340,27 @@ footer {
   }
 }
 
-@media (max-width: 331.5px) {
-  .descuentos {
-    height: 112px;
+@media (max-width: 340px) {
+  .logo-y-titulo {
+    gap: 10px;
+    padding-right: 10px;
   }
+}
 
+@media (max-width: 335px) {
+  .footer-formulario {
+    width: 245px;
+  }
+}
+
+@media (max-width: 324.5px) {
+  .logo-y-titulo {
+    height: 131px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 331.5px) {
   form {
     width: 50vw;
   }
